@@ -1,13 +1,12 @@
 'use strict';
 
 {
-    const a = [2, 4, 10, 99];
+    const o = {
+        a: 3,
+        b: 6,
+    };
 
-    a.forEach(item => {
-        console.log(item);
-    });
-
-    a.forEach((item, index) => {
-        console.log(`${index}: ${item}`);
+    Object.keys(o).forEach(key => {
+        console.log(`${key}: ${o[key]}`);
     });
 }
