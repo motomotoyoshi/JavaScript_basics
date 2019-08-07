@@ -1,11 +1,13 @@
 'use strict';
 
 {
-    const a = [2, 4, 10];
+    const a = [2, 4, 10, 99];
 
-    a.splice(2, 0, 7, 8);
-    console.log(a);
+    a.forEach(item => {
+        console.log(item);
+    });
 
-    const remove = a.splice(1, 2);
-    console.log(remove);
+    a.forEach((item, index) => {
+        console.log(`${index}: ${item}`);
+    });
 }
