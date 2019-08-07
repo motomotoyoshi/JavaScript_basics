@@ -12,10 +12,19 @@
         }
     }
 
-    const yura = new Player('yura', 90);
-    const oki = new Player('oki', 80);
+    class SoccerPlayer extends Player {
+        constructor(name, score, number) {
+            super(name, score);
+            this.number = number;
+        }
+        kick() {
+            console.log('Goal!');
+        }
+    }
 
-    // console.log(yura);
-    yura.showInfo();
-    oki.showInfo();
+    const hyuga = new SoccerPlayer('hyuga', 100, 9);
+
+    hyuga.kick();
+    hyuga.showInfo();
+    console.log(hyuga.number);
 }
