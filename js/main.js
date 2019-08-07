@@ -1,30 +1,11 @@
 'use strict';
 
 {
-    class Player {
-        constructor(name, score) {
-            this.name = name;
-            this.score = score;
-        }
+    const a = [2, 4, 10];
 
-        showInfo() {
-            console.log(`name: ${this.name} score: ${this.score}`);
-        }
-    }
+    a.splice(2, 0, 7, 8);
+    console.log(a);
 
-    class SoccerPlayer extends Player {
-        constructor(name, score, number) {
-            super(name, score);
-            this.number = number;
-        }
-        kick() {
-            console.log('Goal!');
-        }
-    }
-
-    const hyuga = new SoccerPlayer('hyuga', 100, 9);
-
-    hyuga.kick();
-    hyuga.showInfo();
-    console.log(hyuga.number);
+    const remove = a.splice(1, 2);
+    console.log(remove);
 }
