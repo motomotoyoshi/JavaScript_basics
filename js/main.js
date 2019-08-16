@@ -1,9 +1,15 @@
 'use strict';
 
 {
-    // window.alert('hello');
-    alert('hello');
+    let i = 0;
 
-    // const answer = confirm('you');
-    // console.log(answer);
+    const showTime = () => {
+        console.log(new Date());
+        i++;
+        if (i > 2) {
+            clearInterval(timerId);
+        }
+    };
+    
+    let timerId = setInterval(showTime, 1000);
 }
