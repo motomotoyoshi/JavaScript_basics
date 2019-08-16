@@ -1,12 +1,9 @@
 'use strict';
 
 {
-    const o = {
-        a: 3,
-        b: 6,
-    };
+    // window.alert('hello');
+    alert('hello');
 
-    Object.keys(o).forEach(key => {
-        console.log(`${key}: ${o[key]}`);
-    });
+    // const answer = confirm('you');
+    // console.log(answer);
 }
